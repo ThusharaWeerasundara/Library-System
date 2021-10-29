@@ -15,7 +15,7 @@
       </div>
 
       <vs-navbar-item index="0" >
-        <a href="/#/root">Home</a>
+        <a href="/#/root" v-if="$store.state.isLoggedin">Home</a>
       </vs-navbar-item>
 
       <vs-navbar-item index="1">

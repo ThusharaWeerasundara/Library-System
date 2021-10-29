@@ -9,7 +9,9 @@ export default new Vuex.Store({
         token: null,
         user: null,
         isLoggedin: false,
-        role: null
+        role: null,
+        books: null,
+        dueDates: null
     },
     mutations: {
         setToken(state, token)
@@ -31,6 +33,14 @@ export default new Vuex.Store({
         setRole(state, role)
         {
             state.role = role
+        },
+        setBooks(state, books)
+        {
+            state.books = books
+        },
+        setDueDates(state, dueDates)
+        {
+            state.dueDates = dueDates
         }
 
     },
@@ -46,6 +56,14 @@ export default new Vuex.Store({
         setRole({commit}, role)
         {
             commit('setRole', role)
+        },
+        setBooks({commit}, books)
+        {
+            commit('setBooks', books)
+        },
+        setDueDates({commit}, dueDates)
+        {
+            commit('setDueDates', dueDates)
         }
     },
     getters: {

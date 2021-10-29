@@ -42,10 +42,8 @@ module.exports = (sequelize, DataTypes) =>
             type: DataTypes.STRING,
             // default: 'John Smith'
         },
-        role : {
-            // default: 'user',
-            type: DataTypes.STRING
-        },
+        role : {type: DataTypes.STRING, defaultValue:"user" },
+
         dueDate : {
             // default: '2 weeks',
             type: DataTypes.STRING
